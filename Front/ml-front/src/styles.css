@@ -1,0 +1,158 @@
+/* You can add global styles to this file, and also import other style files */
+.image-full{
+  width: 44px;
+  height: 32px;
+  margin-top: 3px;
+}
+
+.image-search{
+  width: 20px;
+  height: 20px;
+}
+
+.image-mobile{
+  display:none;
+}
+
+.height-imput{
+  height: 38px;
+}
+
+.primary-color {
+  background: #FFE600;
+}
+
+@media (max-width: 640px) and (min-width: 320px){
+  .image-full{
+    display:none;
+    margin-top: 3px;
+  }
+
+  .image-mobile{
+    float: right;
+    width: 44px;
+    height: 32px;
+  }
+}
+
+.pl-10{
+  padding-left: 10px;
+}
+
+.pr-60{
+  padding-right: 60px !important;
+}
+
+.p-5{
+  padding: 10px;
+}
+
+@media (max-width: 640px) and (min-width: 320px){
+  .p-5{
+    padding: 5px;
+  }
+}
+
+.searchBox{
+  border-radius: 4px;
+  border-style: solid;
+  width: 46px;
+}
+
+.display-flex{
+  display: flex;
+}
+
+.searchInput{
+  border-color: rgba(128, 128, 128, 0.21);
+}
+
+.w-100{
+  width: 100% !important;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.inputField {
+  flex: 1;
+}
+
+.radius-0 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.radiusSeach-0{
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.border-none{
+  border-style: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+.col-customize {
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom:15px;
+}
+
+.background-color-grey {
+  background-color: #EEEEEE;
+}
+
+.list-cont .row:first-child .col-12 .border-top {
+  border-top: none !important;
+}
+
+.button-buy {
+  color: #3483FA;
+}
+
+.image-list{
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.margin-side {
+ margin: 0 16px;
+}
+
+.border-top {
+  border-top: none !important;
+}
+
+.margin-t-32 {
+  margin-top: 32px;
+}
+
+.image-product{
+  width: 680px;
+}
+
+.size-price {
+  font-size: 46px;
+}
+
+.size-q {
+  font-size: 14px;
+}
+
+.description-title {
+  font-size: 28px;
+  margin-bottom: 32px;
+  margin-left: 32px;
+}
+
+.description-p {
+  font-size: 16px;
+  margin-bottom: 32px;
+}

@@ -5,7 +5,6 @@ const search_item = require("./service/item-search.service.js");
 const endpoint = express();
 
 endpoint.get("/items", (req, res) => {
-    console.log("entre por aca");
     search_api.getListBySearch(req.query.q).then(function (response) {
         res.send(response);
     });

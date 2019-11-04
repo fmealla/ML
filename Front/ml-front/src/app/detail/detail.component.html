@@ -1,0 +1,25 @@
+<div class="container mt-5">
+  <div class="col-customize bg-white p-4">
+    <div class="row">
+      <div class="col-8">
+        <div>
+          <img [src]="item.picture" alt="" class="image-product">
+        </div>
+      </div>
+      <div class="col-4">
+        <p class="size-q">{{item.condition}} - {{item.sold_quantity}} vendidos</p>
+        <h4 class="font-weight-bold mb-3">{{item.item.title}}</h4>
+        <p class="size-price">${{item.item.price.amount +'.'+ item.item.price.decimals}}</p>
+        <button type="button" class="btn btn-primary w-100">Comprar</button>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col">
+          <div class="p-2">
+            <p class="description-title font-weight-bold">Descripción del producto</p>
+            <p class="description-p">{{item.description}}</p>
+          </div>
+        </div>
+      </div>
+</div>
+

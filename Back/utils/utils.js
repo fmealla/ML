@@ -19,14 +19,14 @@ module.exports =  {
         };
     },
 
-    getItemsForList: function getItems(filtered_res) {
+    getItemsForList: function getItemsForList(filtered_res) {
         return filtered_res.map(obj => ({
                 id: obj.id,
                 title: obj.title,
                 price: {
                     currency: obj.currency_id,
-                    amount: getAmount(obj),
-                    decimals: getDecimals(obj)
+                    amount: this.getAmount(obj),
+                    decimals: this.getDecimals(obj)
                 },
                 picture: obj.thumbnail,
                 condition: obj.condition,
@@ -40,13 +40,9 @@ module.exports =  {
     },
 
     getDecimals: function getDecimals(obj) {
-        let decimalOnly = 0;
-        if ( obj.price.toString().indexOf('.') !== -1 ) {
-            decimalOnly = parseFloat((obj.price % 1).toString().split('.')[1]);
-        }
-        return decimalOnly;
+        let decimals = obj.price  - Math.floor(obj.price );
+        return decimals.toFixed(2).toString().substring(2,4);
     }
-
 };
 
 
